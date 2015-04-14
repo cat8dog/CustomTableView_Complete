@@ -15,7 +15,6 @@
 		285593551ADD7B3F002806F5 /* CutsomTable_practiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 285593541ADD7B3F002806F5 /* CutsomTable_practiceTests.m */; };
 		285593601ADD7D39002806F5 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2855935F1ADD7D39002806F5 /* CustomTableViewController.m */; };
 		285593631ADD96AA002806F5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 285593621ADD96AA002806F5 /* CustomTableViewCell.m */; };
-		285593651ADDB378002806F5 /* CustomTableViewController in Resources */ = {isa = PBXBuildFile; fileRef = 285593641ADDB378002806F5 /* CustomTableViewController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +43,6 @@
 		2855935F1ADD7D39002806F5 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		285593611ADD96AA002806F5 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		285593621ADD96AA002806F5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		285593641ADDB378002806F5 /* CustomTableViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CustomTableViewController; path = "../../Projects/Custom Table/CustomTableViewController"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				2855935E1ADD7D39002806F5 /* CustomTableViewController.h */,
-				285593641ADDB378002806F5 /* CustomTableViewController */,
 				2855935F1ADD7D39002806F5 /* CustomTableViewController.m */,
 				285593371ADD7B3F002806F5 /* CutsomTable_practice */,
 				285593511ADD7B3F002806F5 /* CutsomTable_practiceTests */,
@@ -210,7 +207,6 @@
 				285593441ADD7B3F002806F5 /* Main.storyboard in Resources */,
 				285593491ADD7B3F002806F5 /* LaunchScreen.xib in Resources */,
 				285593461ADD7B3F002806F5 /* Images.xcassets in Resources */,
-				285593651ADDB378002806F5 /* CustomTableViewController in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
