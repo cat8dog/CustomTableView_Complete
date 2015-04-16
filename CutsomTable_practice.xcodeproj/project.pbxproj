@@ -15,6 +15,7 @@
 		285593551ADD7B3F002806F5 /* CutsomTable_practiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 285593541ADD7B3F002806F5 /* CutsomTable_practiceTests.m */; };
 		285593601ADD7D39002806F5 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2855935F1ADD7D39002806F5 /* CustomTableViewController.m */; };
 		285593631ADD96AA002806F5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 285593621ADD96AA002806F5 /* CustomTableViewCell.m */; };
+		2899791F1AE02DA300A5FEA7 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2899791E1AE02DA300A5FEA7 /* recipes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		2855935F1ADD7D39002806F5 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		285593611ADD96AA002806F5 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		285593621ADD96AA002806F5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		2899791E1AE02DA300A5FEA7 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				285593381ADD7B3F002806F5 /* Supporting Files */,
 				285593611ADD96AA002806F5 /* CustomTableViewCell.h */,
 				285593621ADD96AA002806F5 /* CustomTableViewCell.m */,
+				2899791E1AE02DA300A5FEA7 /* recipes.plist */,
 			);
 			path = CutsomTable_practice;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				285593441ADD7B3F002806F5 /* Main.storyboard in Resources */,
 				285593491ADD7B3F002806F5 /* LaunchScreen.xib in Resources */,
+				2899791F1AE02DA300A5FEA7 /* recipes.plist in Resources */,
 				285593461ADD7B3F002806F5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
