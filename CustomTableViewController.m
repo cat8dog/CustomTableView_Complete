@@ -1,22 +1,14 @@
-//
-//  CustomTableViewController.m
-//  CutsomTable_practice
-//
-//  Created by Catherine Reyto on 2015-04-14.
-//  Copyright (c) 2015 Catherine Reyto. All rights reserved.
-
-
 #import "CustomTableViewController.h"
 #import "CustomTableViewCell.h"
 
-@interface CustomTableViewController ()
-
-
-@end
+//@interface CustomTableViewController ()
+//
+//
+//@end
 
 @implementation CustomTableViewController
 {
-    NSArray *recipeNames;
+    NSMutableArray *recipeNames;
     NSArray *recipeImages;
     NSArray *prepTimes;
     BOOL recipeChecked[16];
@@ -27,7 +19,7 @@
     [super viewDidLoad];
     
     
-    recipeNames = @[@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwhich", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini"];
+    recipeNames = [NSMutableArray arrayWithObjects: @"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwhich", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
     
     prepTimes = @[@"5 min", @"15 min", @"2 min", @"10 min", @"40 min", @"1 hr", @"30 min", @"50 min", @"10 min", @"5 min", @"15 min", @"1 hr", @"30 min", @"15 min", @"5 min", @"2 min", @"20 min"];
     
@@ -118,6 +110,12 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 100.0;
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle: (UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *) indexPath
+{
+    [recipeNames removeObjectAtIndex:indexPath.row];
+    
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 @end
