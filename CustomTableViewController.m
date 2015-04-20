@@ -1,16 +1,13 @@
 #import "CustomTableViewController.h"
 #import "CustomTableViewCell.h"
+#import "DetailViewController.h"
 
-//@interface CustomTableViewController ()
-//
-//
-//@end
 
 @implementation CustomTableViewController
 {
     NSMutableArray *recipeNames;
-    NSArray *recipeImages;
-    NSArray *prepTimes;
+    NSMutableArray *recipeImages;
+    NSMutableArray *prepTimes;
     BOOL recipeChecked[16];
 }
 
@@ -21,12 +18,29 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    recipeNames = [dict objectForKey:@"Name"];
+    recipeNames = [NSMutableArray arrayWithArray:[dict objectForKey:@"Name"]];
     recipeImages = [dict objectForKey:@"Image"];
     prepTimes = [dict objectForKey:@"PrepTime"];
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailViewController *destViewController = segue.destinationViewController;
+        destViewController.recipeName = [recipeNames objectAtIndex:indexPath.row];
+        destViewController.prepTimeName = [prepTimes objectAtIndex:indexPath.row];
+    }
+}
+/*
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showprepTimeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailViewController *destViewController = segue.destinationViewController;
+        destViewController.prepTimeName = [prepTimeNames objectAtIndex:indexPath.row];
+    }
+    
+}*/
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -45,7 +59,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
@@ -66,7 +79,6 @@
     cell.thumbnailImageView.image = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
     cell.prepTimeLabel.text = [prepTimes objectAtIndex:indexPath.row];
     cell.thumbnailImageView.image = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     
     if (recipeChecked[indexPath.row])
@@ -100,6 +112,15 @@
     }
     [tableView reloadData];
 }
+/*
+// Toggle Checkmark ON & OFF
+if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
+    cell.accessoryType = UITableViewCellAccessoryNone;
+} else {
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+} // So if upon selection the Checkmark is there, remove it, else add it.
+ 
+ */
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

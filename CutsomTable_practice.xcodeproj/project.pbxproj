@@ -16,6 +16,7 @@
 		285593601ADD7D39002806F5 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2855935F1ADD7D39002806F5 /* CustomTableViewController.m */; };
 		285593631ADD96AA002806F5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 285593621ADD96AA002806F5 /* CustomTableViewCell.m */; };
 		2899791F1AE02DA300A5FEA7 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2899791E1AE02DA300A5FEA7 /* recipes.plist */; };
+		28F71DAC1AE58AC5005634C4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F71DAB1AE58AC5005634C4 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		285593611ADD96AA002806F5 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		285593621ADD96AA002806F5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		2899791E1AE02DA300A5FEA7 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
+		28F71DAA1AE58AC5005634C4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		28F71DAB1AE58AC5005634C4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				2855933C1ADD7B3F002806F5 /* AppDelegate.h */,
 				2855933D1ADD7B3F002806F5 /* AppDelegate.m */,
 				285593421ADD7B3F002806F5 /* Main.storyboard */,
+				28F71DAA1AE58AC5005634C4 /* DetailViewController.h */,
+				28F71DAB1AE58AC5005634C4 /* DetailViewController.m */,
 				285593451ADD7B3F002806F5 /* Images.xcassets */,
 				285593471ADD7B3F002806F5 /* LaunchScreen.xib */,
 				285593381ADD7B3F002806F5 /* Supporting Files */,
@@ -228,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F71DAC1AE58AC5005634C4 /* DetailViewController.m in Sources */,
 				2855933E1ADD7B3F002806F5 /* AppDelegate.m in Sources */,
 				285593601ADD7D39002806F5 /* CustomTableViewController.m in Sources */,
 				285593631ADD96AA002806F5 /* CustomTableViewCell.m in Sources */,
