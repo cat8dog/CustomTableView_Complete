@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28166FA11AE806D500577DCD /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28166FA01AE806D500577DCD /* AboutViewController.m */; };
+		28166FA41AE8080F00577DCD /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28166FA21AE8080F00577DCD /* about.jpg */; };
+		28166FA51AE8080F00577DCD /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 28166FA31AE8080F00577DCD /* about.html */; };
 		2855933B1ADD7B3F002806F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2855933A1ADD7B3F002806F5 /* main.m */; };
 		2855933E1ADD7B3F002806F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2855933D1ADD7B3F002806F5 /* AppDelegate.m */; };
 		285593441ADD7B3F002806F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285593421ADD7B3F002806F5 /* Main.storyboard */; };
@@ -16,6 +19,7 @@
 		285593601ADD7D39002806F5 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2855935F1ADD7D39002806F5 /* CustomTableViewController.m */; };
 		285593631ADD96AA002806F5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 285593621ADD96AA002806F5 /* CustomTableViewCell.m */; };
 		2899791F1AE02DA300A5FEA7 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2899791E1AE02DA300A5FEA7 /* recipes.plist */; };
+		28A718ED1AE9643000D089B0 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A718EC1AE9643000D089B0 /* Recipe.m */; };
 		28F71DAC1AE58AC5005634C4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F71DAB1AE58AC5005634C4 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28166F9F1AE806D500577DCD /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		28166FA01AE806D500577DCD /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		28166FA21AE8080F00577DCD /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = "book-tabbar-about/about.jpg"; sourceTree = SOURCE_ROOT; };
+		28166FA31AE8080F00577DCD /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "book-tabbar-about/about.html"; sourceTree = SOURCE_ROOT; };
 		285593351ADD7B3F002806F5 /* CutsomTable_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutsomTable_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285593391ADD7B3F002806F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2855933A1ADD7B3F002806F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,8 +54,10 @@
 		285593611ADD96AA002806F5 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		285593621ADD96AA002806F5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		2899791E1AE02DA300A5FEA7 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
-		28F71DAA1AE58AC5005634C4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		28F71DAB1AE58AC5005634C4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		28A718EB1AE9643000D089B0 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		28A718EC1AE9643000D089B0 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		28F71DAA1AE58AC5005634C4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = CutsomTable_practice/DetailViewController.h; sourceTree = "<group>"; };
+		28F71DAB1AE58AC5005634C4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = CutsomTable_practice/DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +78,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2855932C1ADD7B3F002806F5 = {
+		28166F9E1AE735C100577DCD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2855935E1ADD7D39002806F5 /* CustomTableViewController.h */,
 				2855935F1ADD7D39002806F5 /* CustomTableViewController.m */,
+				28F71DAA1AE58AC5005634C4 /* DetailViewController.h */,
+				28F71DAB1AE58AC5005634C4 /* DetailViewController.m */,
+				28166F9F1AE806D500577DCD /* AboutViewController.h */,
+				28166FA01AE806D500577DCD /* AboutViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2855932C1ADD7B3F002806F5 = {
+			isa = PBXGroup;
+			children = (
+				28A718EB1AE9643000D089B0 /* Recipe.h */,
+				28A718EC1AE9643000D089B0 /* Recipe.m */,
+				28166F9E1AE735C100577DCD /* Controllers */,
 				285593371ADD7B3F002806F5 /* CutsomTable_practice */,
 				285593511ADD7B3F002806F5 /* CutsomTable_practiceTests */,
 				285593361ADD7B3F002806F5 /* Products */,
@@ -91,16 +115,14 @@
 		285593371ADD7B3F002806F5 /* CutsomTable_practice */ = {
 			isa = PBXGroup;
 			children = (
+				285593611ADD96AA002806F5 /* CustomTableViewCell.h */,
+				285593621ADD96AA002806F5 /* CustomTableViewCell.m */,
 				2855933C1ADD7B3F002806F5 /* AppDelegate.h */,
 				2855933D1ADD7B3F002806F5 /* AppDelegate.m */,
 				285593421ADD7B3F002806F5 /* Main.storyboard */,
-				28F71DAA1AE58AC5005634C4 /* DetailViewController.h */,
-				28F71DAB1AE58AC5005634C4 /* DetailViewController.m */,
-				285593451ADD7B3F002806F5 /* Images.xcassets */,
-				285593471ADD7B3F002806F5 /* LaunchScreen.xib */,
 				285593381ADD7B3F002806F5 /* Supporting Files */,
-				285593611ADD96AA002806F5 /* CustomTableViewCell.h */,
-				285593621ADD96AA002806F5 /* CustomTableViewCell.m */,
+				285593471ADD7B3F002806F5 /* LaunchScreen.xib */,
+				285593451ADD7B3F002806F5 /* Images.xcassets */,
 				2899791E1AE02DA300A5FEA7 /* recipes.plist */,
 			);
 			path = CutsomTable_practice;
@@ -109,6 +131,8 @@
 		285593381ADD7B3F002806F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28166FA21AE8080F00577DCD /* about.jpg */,
+				28166FA31AE8080F00577DCD /* about.html */,
 				285593391ADD7B3F002806F5 /* Info.plist */,
 				2855933A1ADD7B3F002806F5 /* main.m */,
 			);
@@ -212,6 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28166FA51AE8080F00577DCD /* about.html in Resources */,
+				28166FA41AE8080F00577DCD /* about.jpg in Resources */,
 				285593441ADD7B3F002806F5 /* Main.storyboard in Resources */,
 				285593491ADD7B3F002806F5 /* LaunchScreen.xib in Resources */,
 				2899791F1AE02DA300A5FEA7 /* recipes.plist in Resources */,
@@ -234,7 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F71DAC1AE58AC5005634C4 /* DetailViewController.m in Sources */,
+				28A718ED1AE9643000D089B0 /* Recipe.m in Sources */,
 				2855933E1ADD7B3F002806F5 /* AppDelegate.m in Sources */,
+				28166FA11AE806D500577DCD /* AboutViewController.m in Sources */,
 				285593601ADD7D39002806F5 /* CustomTableViewController.m in Sources */,
 				285593631ADD96AA002806F5 /* CustomTableViewCell.m in Sources */,
 				2855933B1ADD7B3F002806F5 /* main.m in Sources */,
