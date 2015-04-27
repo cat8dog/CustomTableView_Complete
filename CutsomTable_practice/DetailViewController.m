@@ -8,7 +8,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.title = self.recipe.name;
+    self.prepTimeLabel.text = self.recipe.prepTime;
+    self.recipeImageView.image = [UIImage imageNamed:self.recipe.image];
+    
+    NSMutableString *ingredientsText = [NSMutableString string];
+    for (NSString* ingredient in self.recipe.ingredients) {
+        [ingredientsText appendFormat:@"%@\n", ingredient];
+        self.ingredientsTextView.text = ingredientsText;
+    }
 
 
  

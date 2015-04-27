@@ -3,10 +3,11 @@
 
 @interface DetailViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
-@property (nonatomic, strong) NSString *recipeName;
 
+@property (strong, nonatomic) IBOutlet UIImageView *recipeImageView;
+@property (strong, nonatomic) IBOutlet UITextView *ingredientsTextView;
 @property (nonatomic, strong) IBOutlet UILabel *prepTimeLabel;
-@property (nonatomic, strong) NSString *prepTimeName;
+
+@property (nonatomic, strong) Recipe *recipe; 
 
 @end

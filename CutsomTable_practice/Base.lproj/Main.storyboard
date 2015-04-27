@@ -67,24 +67,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PrepTime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZV-TY-T4y">
-                                <rect key="frame" x="115" y="243" width="91" height="51"/>
+                                <rect key="frame" x="213" y="286" width="91" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY2-wg-ieC">
-                                <rect key="frame" x="16" y="178" width="288" height="57"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-frame" translatesAutoresizingMaskIntoConstraints="NO" id="U0s-2F-RgA">
+                                <rect key="frame" x="12" y="72" width="297" height="199"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ucd-GM-0g9">
+                                <rect key="frame" x="16" y="72" width="288" height="186"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMX-WM-cqc">
+                                <rect key="frame" x="33" y="301" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEh-zD-dRn">
+                                <rect key="frame" x="33" y="345" width="264" height="157"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4oH-1q-Zia"/>
                     <connections>
-                        <outlet property="prepTimeLabel" destination="2ZV-TY-T4y" id="9O9-Kt-plF"/>
-                        <outlet property="recipeLabel" destination="UY2-wg-ieC" id="Dy2-f5-tI0"/>
+                        <outlet property="ingredientsTextView" destination="VEh-zD-dRn" id="hOZ-PU-qBT"/>
+                        <outlet property="prepTimeLabel" destination="2ZV-TY-T4y" id="VAI-qd-bfw"/>
+                        <outlet property="recipeImageView" destination="Ucd-GM-0g9" id="hrA-If-DRk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dz-EN-YyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -153,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ff0-KO-jUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3350" y="1190"/>
+            <point key="canvasLocation" x="3310" y="1178"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Fcs-Wq-JFb">
@@ -177,6 +191,7 @@
     </scenes>
     <resources>
         <image name="creme_brelee" width="560" height="350"/>
+        <image name="photo-frame" width="297" height="199"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
